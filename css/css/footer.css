@@ -1,0 +1,278 @@
+/* =========================================================
+   DALEH FITWEAR
+   FOOTER
+========================================================= */
+
+
+/* =========================================================
+   1. FOOTER
+========================================================= */
+
+.footer {
+    width: 100%;
+
+    margin-top: 80px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2b2024 0%,
+            #21191c 55%,
+            #181214 100%
+        );
+
+    color: white;
+}
+
+
+/* =========================================================
+   2. CONTAINER
+========================================================= */
+
+.footer-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    padding: 70px 0 55px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr;
+
+    gap: 70px;
+}
+
+
+/* =========================================================
+   3. MARCA
+========================================================= */
+
+.footer-brand h2 {
+    margin-bottom: 15px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    color: #ffffff;
+
+    font-size: 34px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.footer-brand h2::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 2px;
+
+    margin-top: 12px;
+
+    background-color: var(--dourado);
+}
+
+
+.footer-brand p {
+    max-width: 320px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   4. TÍTULOS
+========================================================= */
+
+.footer-links h3,
+.footer-contact h3 {
+    margin-bottom: 22px;
+
+    color: var(--dourado);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   5. LINKS
+========================================================= */
+
+.footer-links,
+.footer-contact {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+.footer-links a,
+.footer-contact a {
+    margin-bottom: 12px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: var(--dourado);
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   6. ÍCONES
+========================================================= */
+
+.footer-contact i {
+    width: 20px;
+
+    color: var(--dourado);
+
+    font-size: 17px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   7. PARTE INFERIOR
+========================================================= */
+
+.footer-bottom {
+    border-top:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    padding: 22px 20px;
+
+    text-align: center;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.42);
+
+    font-size: 10px;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   8. TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .footer {
+        margin-top: 60px;
+    }
+
+
+    .footer-container {
+        padding: 55px 0 45px;
+
+        grid-template-columns:
+            1.5fr
+            1fr;
+
+        gap: 45px;
+    }
+
+
+    .footer-brand {
+        grid-column:
+            1 / -1;
+    }
+
+
+    .footer-brand p {
+        max-width: 450px;
+    }
+
+}
+
+
+/* =========================================================
+   9. CELULAR
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .footer {
+        margin-top: 45px;
+    }
+
+
+    .footer-container {
+        width: 88%;
+
+        padding: 45px 0 35px;
+
+        grid-template-columns:
+            1fr;
+
+        gap: 35px;
+    }
+
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+
+    .footer-brand h2 {
+        font-size: 29px;
+    }
+
+
+    .footer-links h3,
+    .footer-contact h3 {
+        margin-bottom: 17px;
+    }
+
+
+    .footer-bottom {
+        padding: 20px;
+    }
+
+}
