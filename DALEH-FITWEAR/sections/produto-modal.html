@@ -1,0 +1,149 @@
+<div class="product-modal-overlay" id="product-modal-overlay"></div>
+
+<div class="product-modal" id="product-modal">
+
+    <button
+        class="product-modal-close"
+        id="product-modal-close"
+        type="button"
+        aria-label="Fechar produto"
+    >
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="product-modal-content">
+
+        <!-- GALERIA / IMAGEM -->
+        <div class="product-modal-gallery">
+
+            <div class="product-modal-image">
+
+                <!-- FUNDO DESFOCADO -->
+                <div
+                    class="product-modal-image-bg"
+                    id="modal-product-image-bg"
+                ></div>
+
+                <!-- FOTO PRINCIPAL -->
+                <img
+                    id="modal-product-image"
+                    src=""
+                    alt=""
+                >
+
+                <!-- SETA ANTERIOR -->
+                <button
+                    class="product-gallery-arrow product-gallery-prev"
+                    id="gallery-prev"
+                    type="button"
+                    aria-label="Foto anterior"
+                >
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <!-- PRÓXIMA FOTO -->
+                <button
+                    class="product-gallery-arrow product-gallery-next"
+                    id="gallery-next"
+                    type="button"
+                    aria-label="Próxima foto"
+                >
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+            </div>
+
+            <!-- MINIATURAS -->
+            <div
+                class="product-gallery-thumbnails"
+                id="modal-product-thumbnails"
+            ></div>
+
+        </div>
+
+        <!-- INFORMAÇÕES -->
+        <div class="product-modal-info">
+
+            <span
+                class="product-modal-category"
+                id="modal-product-category"
+            ></span>
+
+            <h2 id="modal-product-name"></h2>
+
+            <div
+                class="product-modal-price"
+                id="modal-product-price"
+            ></div>
+
+            <p
+                class="product-modal-description"
+                id="modal-product-description"
+            ></p>
+
+            <!-- TAMANHO -->
+            <div class="product-modal-option">
+                <span>Tamanho</span>
+
+                <div
+                    class="product-modal-sizes"
+                    id="modal-product-sizes"
+                ></div>
+            </div>
+
+            <!-- COR -->
+            <div class="product-modal-option">
+                <span>Cor</span>
+
+                <div
+                    class="product-modal-colors"
+                    id="modal-product-colors"
+                ></div>
+            </div>
+
+            <!-- QUANTIDADE -->
+            <div class="product-modal-option">
+                <span>Quantidade</span>
+
+                <div class="product-modal-quantity">
+
+                    <button
+                        id="modal-quantity-minus"
+                        type="button"
+                    >
+                        −
+                    </button>
+
+                    <span id="modal-quantity">1</span>
+
+                    <button
+                        id="modal-quantity-plus"
+                        type="button"
+                    >
+                        +
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- ESTOQUE -->
+            <div
+                class="product-modal-stock"
+                id="modal-product-stock"
+            ></div>
+
+            <!-- BOTÃO -->
+            <button
+                class="product-modal-add"
+                id="modal-add-cart"
+                type="button"
+            >
+                <i class="fa-solid fa-bag-shopping"></i>
+                ADICIONAR AO CARRINHO
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
