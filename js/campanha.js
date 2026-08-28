@@ -12,7 +12,7 @@
 
 const configuracaoCampanhas = {
 
-    ativa: true,
+    ativa: false,
 
     trocaAutomatica: true,
 
